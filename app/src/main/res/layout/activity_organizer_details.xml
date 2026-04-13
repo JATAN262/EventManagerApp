@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_primary"
+    android:padding="16dp">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/organizerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:background="@color/background_card"
+            />
+
+        <TextView android:id="@+id/organizerNameView"
+            android:text="Organizer Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.EventManagerApp.Headline2"
+            android:layout_marginTop="16dp" />
+
+        <TextView android:id="@+id/organizerLocationView"
+            android:hint="Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.EventManagerApp.Body2"
+            android:layout_marginTop="8dp" />
+
+        <TextView android:id="@+id/organizerPriceView"
+            android:hint="Price Range"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.EventManagerApp.Body2"
+            android:layout_marginTop="4dp" />
+
+        <TextView android:id="@+id/organizerBioView"
+            android:hint="Description about the organizer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.EventManagerApp.Body1"
+            android:layout_marginTop="8dp" />
+
+        <Button android:id="@+id/bookNowBtn"
+            android:text="Book Now"
+            style="@style/Widget.EventManagerApp.Button"
+            android:layout_marginTop="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/chatBtn"
+            android:text="Chat with Organizer"
+            style="@style/Widget.EventManagerApp.Button.Secondary"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
